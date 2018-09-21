@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E33E9C621557112000DF821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33E9C521557112000DF821 /* AppDelegate.swift */; };
+		9E33E9C821557112000DF821 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33E9C721557112000DF821 /* ViewController.swift */; };
+		9E33E9CA21557114000DF821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E33E9C921557114000DF821 /* Assets.xcassets */; };
+		9E33E9CD21557114000DF821 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E33E9CB21557114000DF821 /* Main.storyboard */; };
+		9E33E9D921557115000DF821 /* Theory_Of_Information__lab_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33E9D821557115000DF821 /* Theory_Of_Information__lab_1Tests.swift */; };
+		9E33E9E421557115000DF821 /* Theory_Of_Information__lab_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33E9E321557115000DF821 /* Theory_Of_Information__lab_1UITests.swift */; };
+		9E33E9F221557A71000DF821 /* RailwayMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33E9F121557A71000DF821 /* RailwayMethod.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E33E9D521557115000DF821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E33E9BA21557112000DF821 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E33E9C121557112000DF821;
+			remoteInfo = "Theory Of Information, lab 1";
+		};
+		9E33E9E021557115000DF821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E33E9BA21557112000DF821 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E33E9C121557112000DF821;
+			remoteInfo = "Theory Of Information, lab 1";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9E33E9C221557112000DF821 /* Theory Of Information, lab 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Theory Of Information, lab 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E33E9C521557112000DF821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9E33E9C721557112000DF821 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E33E9C921557114000DF821 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E33E9CC21557114000DF821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E33E9CE21557114000DF821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E33E9CF21557114000DF821 /* Theory_Of_Information__lab_1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Theory_Of_Information__lab_1.entitlements; sourceTree = "<group>"; };
+		9E33E9D421557115000DF821 /* Theory Of Information, lab 1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Theory Of Information, lab 1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E33E9D821557115000DF821 /* Theory_Of_Information__lab_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theory_Of_Information__lab_1Tests.swift; sourceTree = "<group>"; };
+		9E33E9DA21557115000DF821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E33E9DF21557115000DF821 /* Theory Of Information, lab 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Theory Of Information, lab 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E33E9E321557115000DF821 /* Theory_Of_Information__lab_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theory_Of_Information__lab_1UITests.swift; sourceTree = "<group>"; };
+		9E33E9E521557115000DF821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E33E9F121557A71000DF821 /* RailwayMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailwayMethod.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E33E9BF21557112000DF821 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E33E9D121557114000DF821 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E33E9DC21557115000DF821 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E33E9B921557112000DF821 = {
+			isa = PBXGroup;
+			children = (
+				9E33E9C421557112000DF821 /* Theory Of Information, lab 1 */,
+				9E33E9D721557115000DF821 /* Theory Of Information, lab 1Tests */,
+				9E33E9E221557115000DF821 /* Theory Of Information, lab 1UITests */,
+				9E33E9C321557112000DF821 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E33E9C321557112000DF821 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E33E9C221557112000DF821 /* Theory Of Information, lab 1.app */,
+				9E33E9D421557115000DF821 /* Theory Of Information, lab 1Tests.xctest */,
+				9E33E9DF21557115000DF821 /* Theory Of Information, lab 1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E33E9C421557112000DF821 /* Theory Of Information, lab 1 */ = {
+			isa = PBXGroup;
+			children = (
+				9E33E9C521557112000DF821 /* AppDelegate.swift */,
+				9E33E9C721557112000DF821 /* ViewController.swift */,
+				9E33E9C921557114000DF821 /* Assets.xcassets */,
+				9E33E9CB21557114000DF821 /* Main.storyboard */,
+				9E33E9F121557A71000DF821 /* RailwayMethod.swift */,
+				9E33E9CE21557114000DF821 /* Info.plist */,
+				9E33E9CF21557114000DF821 /* Theory_Of_Information__lab_1.entitlements */,
+			);
+			path = "Theory Of Information, lab 1";
+			sourceTree = "<group>";
+		};
+		9E33E9D721557115000DF821 /* Theory Of Information, lab 1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9E33E9D821557115000DF821 /* Theory_Of_Information__lab_1Tests.swift */,
+				9E33E9DA21557115000DF821 /* Info.plist */,
+			);
+			path = "Theory Of Information, lab 1Tests";
+			sourceTree = "<group>";
+		};
+		9E33E9E221557115000DF821 /* Theory Of Information, lab 1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				9E33E9E321557115000DF821 /* Theory_Of_Information__lab_1UITests.swift */,
+				9E33E9E521557115000DF821 /* Info.plist */,
+			);
+			path = "Theory Of Information, lab 1UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E33E9C121557112000DF821 /* Theory Of Information, lab 1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E33E9E821557115000DF821 /* Build configuration list for PBXNativeTarget "Theory Of Information, lab 1" */;
+			buildPhases = (
+				9E33E9BE21557112000DF821 /* Sources */,
+				9E33E9BF21557112000DF821 /* Frameworks */,
+				9E33E9C021557112000DF821 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Theory Of Information, lab 1";
+			productName = "Theory Of Information, lab 1";
+			productReference = 9E33E9C221557112000DF821 /* Theory Of Information, lab 1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E33E9D321557114000DF821 /* Theory Of Information, lab 1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E33E9EB21557115000DF821 /* Build configuration list for PBXNativeTarget "Theory Of Information, lab 1Tests" */;
+			buildPhases = (
+				9E33E9D021557114000DF821 /* Sources */,
+				9E33E9D121557114000DF821 /* Frameworks */,
+				9E33E9D221557114000DF821 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E33E9D621557115000DF821 /* PBXTargetDependency */,
+			);
+			name = "Theory Of Information, lab 1Tests";
+			productName = "Theory Of Information, lab 1Tests";
+			productReference = 9E33E9D421557115000DF821 /* Theory Of Information, lab 1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9E33E9DE21557115000DF821 /* Theory Of Information, lab 1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E33E9EE21557115000DF821 /* Build configuration list for PBXNativeTarget "Theory Of Information, lab 1UITests" */;
+			buildPhases = (
+				9E33E9DB21557115000DF821 /* Sources */,
+				9E33E9DC21557115000DF821 /* Frameworks */,
+				9E33E9DD21557115000DF821 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E33E9E121557115000DF821 /* PBXTargetDependency */,
+			);
+			name = "Theory Of Information, lab 1UITests";
+			productName = "Theory Of Information, lab 1UITests";
+			productReference = 9E33E9DF21557115000DF821 /* Theory Of Information, lab 1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E33E9BA21557112000DF821 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Дмитрий Болоников";
+				TargetAttributes = {
+					9E33E9C121557112000DF821 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					9E33E9D321557114000DF821 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 9E33E9C121557112000DF821;
+					};
+					9E33E9DE21557115000DF821 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 9E33E9C121557112000DF821;
+					};
+				};
+			};
+			buildConfigurationList = 9E33E9BD21557112000DF821 /* Build configuration list for PBXProject "Theory Of Information, lab 1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E33E9B921557112000DF821;
+			productRefGroup = 9E33E9C321557112000DF821 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E33E9C121557112000DF821 /* Theory Of Information, lab 1 */,
+				9E33E9D321557114000DF821 /* Theory Of Information, lab 1Tests */,
+				9E33E9DE21557115000DF821 /* Theory Of Information, lab 1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E33E9C021557112000DF821 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E33E9CA21557114000DF821 /* Assets.xcassets in Resources */,
+				9E33E9CD21557114000DF821 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E33E9D221557114000DF821 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E33E9DD21557115000DF821 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E33E9BE21557112000DF821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E33E9F221557A71000DF821 /* RailwayMethod.swift in Sources */,
+				9E33E9C821557112000DF821 /* ViewController.swift in Sources */,
+				9E33E9C621557112000DF821 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E33E9D021557114000DF821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E33E9D921557115000DF821 /* Theory_Of_Information__lab_1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E33E9DB21557115000DF821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E33E9E421557115000DF821 /* Theory_Of_Information__lab_1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E33E9D621557115000DF821 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E33E9C121557112000DF821 /* Theory Of Information, lab 1 */;
+			targetProxy = 9E33E9D521557115000DF821 /* PBXContainerItemProxy */;
+		};
+		9E33E9E121557115000DF821 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E33E9C121557112000DF821 /* Theory Of Information, lab 1 */;
+			targetProxy = 9E33E9E021557115000DF821 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E33E9CB21557114000DF821 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E33E9CC21557114000DF821 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E33E9E621557115000DF821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E33E9E721557115000DF821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9E33E9E921557115000DF821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Theory Of Information, lab 1/Theory_Of_Information__lab_1.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Theory Of Information, lab 1/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dimanbalony.Theory-Of-Information--lab-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		9E33E9EA21557115000DF821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Theory Of Information, lab 1/Theory_Of_Information__lab_1.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Theory Of Information, lab 1/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dimanbalony.Theory-Of-Information--lab-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		9E33E9EC21557115000DF821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Theory Of Information, lab 1Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dimanbalony.Theory-Of-Information--lab-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Theory Of Information, lab 1.app/Contents/MacOS/Theory Of Information, lab 1";
+			};
+			name = Debug;
+		};
+		9E33E9ED21557115000DF821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Theory Of Information, lab 1Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dimanbalony.Theory-Of-Information--lab-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Theory Of Information, lab 1.app/Contents/MacOS/Theory Of Information, lab 1";
+			};
+			name = Release;
+		};
+		9E33E9EF21557115000DF821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Theory Of Information, lab 1UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dimanbalony.Theory-Of-Information--lab-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "Theory Of Information, lab 1";
+			};
+			name = Debug;
+		};
+		9E33E9F021557115000DF821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Theory Of Information, lab 1UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dimanbalony.Theory-Of-Information--lab-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "Theory Of Information, lab 1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E33E9BD21557112000DF821 /* Build configuration list for PBXProject "Theory Of Information, lab 1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E33E9E621557115000DF821 /* Debug */,
+				9E33E9E721557115000DF821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E33E9E821557115000DF821 /* Build configuration list for PBXNativeTarget "Theory Of Information, lab 1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E33E9E921557115000DF821 /* Debug */,
+				9E33E9EA21557115000DF821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E33E9EB21557115000DF821 /* Build configuration list for PBXNativeTarget "Theory Of Information, lab 1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E33E9EC21557115000DF821 /* Debug */,
+				9E33E9ED21557115000DF821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E33E9EE21557115000DF821 /* Build configuration list for PBXNativeTarget "Theory Of Information, lab 1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E33E9EF21557115000DF821 /* Debug */,
+				9E33E9F021557115000DF821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E33E9BA21557112000DF821 /* Project object */;
+}
