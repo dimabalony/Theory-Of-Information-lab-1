@@ -14,6 +14,8 @@
 		9E33E9D921557115000DF821 /* Theory_Of_Information__lab_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33E9D821557115000DF821 /* Theory_Of_Information__lab_1Tests.swift */; };
 		9E33E9E421557115000DF821 /* Theory_Of_Information__lab_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33E9E321557115000DF821 /* Theory_Of_Information__lab_1UITests.swift */; };
 		9E33E9F221557A71000DF821 /* RailwayMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33E9F121557A71000DF821 /* RailwayMethod.swift */; };
+		9E33E9FC2155A7F6000DF821 /* ColumsMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33E9FB2155A7F6000DF821 /* ColumsMethod.swift */; };
+		9E33E9FE2155A80B000DF821 /* VigenereColums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33E9FD2155A80B000DF821 /* VigenereColums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		9E33E9E321557115000DF821 /* Theory_Of_Information__lab_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theory_Of_Information__lab_1UITests.swift; sourceTree = "<group>"; };
 		9E33E9E521557115000DF821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E33E9F121557A71000DF821 /* RailwayMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailwayMethod.swift; sourceTree = "<group>"; };
+		9E33E9FB2155A7F6000DF821 /* ColumsMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumsMethod.swift; sourceTree = "<group>"; };
+		9E33E9FD2155A80B000DF821 /* VigenereColums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VigenereColums.swift; sourceTree = "<group>"; };
+		9EBEF26921569232002F8382 /* Theory Of Information, lab 1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Theory Of Information, lab 1.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +103,13 @@
 		9E33E9C421557112000DF821 /* Theory Of Information, lab 1 */ = {
 			isa = PBXGroup;
 			children = (
+				9EBEF26921569232002F8382 /* Theory Of Information, lab 1.entitlements */,
 				9E33E9C521557112000DF821 /* AppDelegate.swift */,
 				9E33E9C721557112000DF821 /* ViewController.swift */,
 				9E33E9C921557114000DF821 /* Assets.xcassets */,
 				9E33E9CB21557114000DF821 /* Main.storyboard */,
+				9E33E9FB2155A7F6000DF821 /* ColumsMethod.swift */,
+				9E33E9FD2155A80B000DF821 /* VigenereColums.swift */,
 				9E33E9F121557A71000DF821 /* RailwayMethod.swift */,
 				9E33E9CE21557114000DF821 /* Info.plist */,
 				9E33E9CF21557114000DF821 /* Theory_Of_Information__lab_1.entitlements */,
@@ -195,6 +203,11 @@
 				TargetAttributes = {
 					9E33E9C121557112000DF821 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					9E33E9D321557114000DF821 = {
 						CreatedOnToolsVersion = 10.0;
@@ -258,8 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E33E9F221557A71000DF821 /* RailwayMethod.swift in Sources */,
+				9E33E9FC2155A7F6000DF821 /* ColumsMethod.swift in Sources */,
 				9E33E9C821557112000DF821 /* ViewController.swift in Sources */,
 				9E33E9C621557112000DF821 /* AppDelegate.swift in Sources */,
+				9E33E9FE2155A80B000DF821 /* VigenereColums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +440,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Theory Of Information, lab 1/Theory_Of_Information__lab_1.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Theory Of Information, lab 1/Info.plist";
@@ -443,7 +457,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Theory Of Information, lab 1/Theory_Of_Information__lab_1.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Theory Of Information, lab 1/Info.plist";

@@ -1,37 +1,33 @@
 //
-//  RailwayMethod.swift
+//  VigenereColums.swift
 //  Theory Of Information, lab 1
 //
-//  Created by Дмитрий Болоников on 9/21/18.
+//  Created by Дмитрий Болоников on 9/22/18.
 //  Copyright © 2018 Дмитрий Болоников. All rights reserved.
 //
 
 import Cocoa
 
-class RailwayMethod: NSViewController {
-    
-    @IBOutlet weak var fieldOriginal: NSTextField!
-    @IBOutlet weak var cipherText: NSTextField!
+class VigenereColums: NSViewController {
+
     @IBOutlet weak var keyField: NSTextField!
-    
+    @IBOutlet weak var originalText: NSTextField!
+    @IBOutlet weak var cipherText: NSTextField!
     
     @IBAction func encodeButton(_ sender: Any) {
-        guard keyField.stringValue != "" || fieldOriginal.stringValue != "" else {
+        guard keyField.stringValue != "" || originalText.stringValue != "" else {
             dialogAlert()
             return
         }
-        guard let textKey = Int(keyField.stringValue) else {
+        let textKey = keyField.stringValue.lowercased().filter(("а"..."ё").contains)
+        keyField.stringValue = textKey
+        let textOriginal = originalText.stringValue.lowercased().filter(("а"..."ё").contains)
+        originalText.stringValue = textOriginal
+        if textKey == "" || textOriginal == "" {
             dialogAlert()
             return
         }
-        keyField.stringValue = String(textKey)
-        let textOriginal = fieldOriginal.stringValue.lowercased().filter(("a"..."z").contains)
-        fieldOriginal.stringValue = textOriginal
-        if textOriginal == "" {
-            dialogAlert()
-            return
-        }
-        cipherText.stringValue = railwayEncrypt(from: textOriginal, height: textKey)
+        cipherText.stringValue = vigenereEncrypt(of: textOriginal, with: textKey)
     }
     
     @IBAction func decodeButton(_ sender: Any) {
@@ -39,18 +35,15 @@ class RailwayMethod: NSViewController {
             dialogAlert()
             return
         }
-        guard let textKey = Int(keyField.stringValue) else {
-            dialogAlert()
-            return
-        }
-        keyField.stringValue = String(textKey)
-        let textCipher = cipherText.stringValue.lowercased().filter(("a"..."z").contains)
+        let textKey = keyField.stringValue.lowercased().filter(("а"..."ё").contains)
+        keyField.stringValue = textKey
+        let textCipher = cipherText.stringValue.lowercased().filter(("а"..."ё").contains)
         cipherText.stringValue = textCipher
-        if textCipher == "" {
+        if textKey == "" || textCipher == "" {
             dialogAlert()
             return
         }
-        fieldOriginal.stringValue = railwayDecrypt(from: textCipher, height: textKey)
+        originalText.stringValue = vigenereDecrypt(of: textCipher, with: textKey)
     }
     
     func dialogAlert() {
@@ -78,10 +71,10 @@ class RailwayMethod: NSViewController {
             
             if (result != nil) {
                 do {
-                    fieldOriginal.stringValue = try String(contentsOf: result!, encoding: .utf8)
+                    originalText.stringValue = try String(contentsOf: result!, encoding: .utf8)
                 }
                 catch {
-                     print("Error")
+                    print("Error")
                 }
             }
         } else {
@@ -105,7 +98,7 @@ class RailwayMethod: NSViewController {
             
             if let myResult = result {
                 do {
-                    try fieldOriginal.stringValue.write(to: myResult, atomically: true, encoding: .utf8)
+                    try originalText.stringValue.write(to: myResult, atomically: true, encoding: .utf8)
                 }
                 catch {
                     print("Failed writing to URL: \(myResult), Error: " + error.localizedDescription)
@@ -170,68 +163,56 @@ class RailwayMethod: NSViewController {
         }
     }
     
-    func railwayEncrypt(from source: String, height: Int) -> String {
-        let maxPeriod = (height - 1) * 2
-        var result = "", period1 = maxPeriod, period2 = maxPeriod
-        if height != 1 {
-            for row in 0...height - 1 {
-                var toggle = true
-                var index = row
-                while index <= source.count - 1 {
-                    result += String(source[source.index(source.startIndex, offsetBy: index)])
-                    if toggle {
-                        index += period1
-                    } else {
-                        index += period2
-                    }
-                    toggle = !toggle
-                }
-                period1 -= 2
-                period2 = maxPeriod - period1
-                if period1 == 0 {
-                    period1 = maxPeriod
-                }
-            }
-        } else {
-            result = source
-        }
-        return result
-    }
-
-    
-    func railwayDecrypt(from source: String, height: Int) -> String {
-        let maxPeriod = (height - 1) * 2
-        var index = 0, encrypted = Array(repeating: "", count: source.count), period1 = maxPeriod, period2 = maxPeriod, indexSource = 0
+    func vigenereEncrypt(of source: String, with key: String) -> String {
+        let alphabet = ["а", "б", "в", "г", "д", "е", "ё", "ж", "з", "и", "й", "к", "л", "м", "н", "о", "п", "р", "с", "т", "у", "ф", "х", "ц", "ч", "ш", "щ", "ь", "ы", "ъ", "э", "ю", "я"]
         var result = ""
-        if height != 1 {
-            for _ in 0...height - 1 {
-                var toggle = true
-                while (index < source.count) && (indexSource < source.count) {
-                    encrypted[index] = String(source[source.index(source.startIndex, offsetBy: indexSource)])
-                    indexSource += 1
-                    if toggle {
-                        index += period1
-                    } else {
-                        index += period2
-                    }
-                    toggle = !toggle
+        var indexKey = 0
+        for character in source {
+            var indexSourceInAlphabet = 0
+            var indexKeyInAlphabet = 0
+            for (index, value) in alphabet.enumerated() {
+                if value == String(character) {
+                    indexSourceInAlphabet = index
                 }
-                period1 -= 2
-                if period1 == 0 {
-                    period1 = maxPeriod
-                    period2 = maxPeriod
-                } else {
-                    period2 = maxPeriod - period1
+                if value == String(key[key.index(key.startIndex, offsetBy: indexKey)]) {
+                    indexKeyInAlphabet = index
                 }
-                index = period2 / 2
             }
-            for char in encrypted  {
-                result += char
+            indexKey += 1
+            if indexKey >= key.count {
+                indexKey = 0
             }
-        } else {
-          result = source
+            let index = (indexKeyInAlphabet + indexSourceInAlphabet) % 33
+            result += String(alphabet[alphabet.index(alphabet.startIndex, offsetBy: index)])
+            
         }
         return result
     }
     
+    func vigenereDecrypt(of source: String, with key: String) -> String {
+        let alphabet = ["а", "б", "в", "г", "д", "е", "ё", "ж", "з", "и", "й", "к", "л", "м", "н", "о", "п", "р", "с", "т", "у", "ф", "х", "ц", "ч", "ш", "щ", "ь", "ы", "ъ", "э", "ю", "я"]
+        let sourceWithoutSpaces = source.replacingOccurrences(of: " ", with: "")
+        var result = ""
+        var indexKey = 0
+        for character in sourceWithoutSpaces {
+            var indexSourceInAlphabet = 0
+            var indexKeyInAlphabet = 0
+            for (index, value) in alphabet.enumerated() {
+                if value == String(character) {
+                    indexSourceInAlphabet = index
+                }
+                if value == String(key[key.index(key.startIndex, offsetBy: indexKey)]) {
+                    indexKeyInAlphabet = index
+                }
+            }
+            indexKey += 1
+            if indexKey >= key.count {
+                indexKey = 0
+            }
+            let index = (indexSourceInAlphabet + 33 - indexKeyInAlphabet) % 33
+            result += String(alphabet[alphabet.index(alphabet.startIndex, offsetBy: index)])
+            
+        }
+        return result
+    }
 }
